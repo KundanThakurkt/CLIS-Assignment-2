@@ -1,0 +1,45 @@
+Question 4
+Please refer screenshots Q4_Output.png, emailcleaner.sh, emails.txt, valid.txt and invalid.txt files for command execution and output with below explanations:
+
+1. Command: cat << EOF > emails.txt
+            user1@gmail.com
+	    user2@yahoo.com
+	    user3@domain.org
+	    user1@gmail.com
+	    invalid@email
+	    test123@test.com
+	    abc@abc.com
+	    abc@abc.in
+	    EOF
+   Explanation: This command creates a sample emails file with predefined entries in the required format for testing the script.
+
+
+2. Command: ./emailcleaner.sh
+   Output:
+	    Email cleaning completed.
+	    Valid emails stored in valid.txt
+	    Invalid emails stored in invalid.txt
+
+
+   Explanation: The script executes and performs required tasks like Extract all valid email addresses and store them in valid.txt, 
+		Extract invalid email addresses and store them in invalid.txt, 
+		Remove duplicate entries from valid.txt.
+
+3. Command: cat valid.txt
+   Output:
+	    abc@abc.com
+	    test123@test.com
+	    user1@gmail.com
+	    user2@yahoo.com
+
+   Explanation: Cat command displays the contents of valid.txt containing valid email addresses.	 
+	
+
+
+4.Command: cat invalid.txt
+  Output:
+	    user3@domain.org
+            invalid@email
+            abc@abc.in
+
+  Explanation: Cat command displays the contents of invalid.txt containing invalid email addresses.	

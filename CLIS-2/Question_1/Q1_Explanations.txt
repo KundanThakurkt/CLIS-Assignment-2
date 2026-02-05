@@ -1,0 +1,28 @@
+Question 1
+Please refer screenshots Q1_Output.png and analyze_sh.png, analyze.sh and sample.txt files for command execution and output with below explanations:
+
+1. Command: chmod +x analyze.sh
+   Explanation: This command makes the script executable so it can be run directly.
+
+2. Command: ./analyze.sh sample.txt
+   Output: 
+         File analysis for: sample.txt
+         1  7 36 sample.txt
+
+   Explanation: The script detects that the argument is a file and displays the number of lines, words, and characters using the wc command.
+
+3. Command: ./analyze.sh .
+   Output: 
+       Directory analysis for: .
+       Total files: 2
+       Text (.txt) files: 1
+
+   Explanation: The script identifies the argument as a directory and counts the total number of files and the number of .txt files inside it.
+
+4. Command: ./analyze.sh
+   Output: Error: Please provide exactly one argument.
+   Explanation: When no argument is provided, the script displays an error message indicating invalid argument count.
+
+5. Command: ./analyze.sh anyFile.txt
+   Output: Error: The specified path does not exist.
+   Explanation: When wrong file path is provided as argument, the script displays an error message indicating path does not exist.

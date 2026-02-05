@@ -1,0 +1,44 @@
+Question 5
+Please refer screenshots Q5_Output.png, sync.sh, dirA and dirB folders with txt files for command execution and output with below explanations:
+
+1. Command: nano sync.sh
+            
+   Explanation: This command opens nano editor to edit file.
+
+
+2. Command: chmod +x sync.sh
+    
+   Explanation: This makes the script file executable.
+
+3. Command: mkdir dirA dirB
+            echo "Hello World" > dirA/file1.txt
+    	    echo "Hello World" > dirB/file1.txt
+	    echo "Only in A" > dirA/file2.txt
+	    echo "Only in B" > dirB/file3.txt
+	    echo "Different content" > dirB/file1_diff.txt
+   
+   Explanation: The mkdir makes new directories dirA & dirB, echo command used to create and fill data in files with output redirection	
+
+
+4. Command: ./sync.sh dirA dirB
+   Output: Files only in dirA:
+	   -------------------
+	   file2.txt
+
+	   Files only in dirB:
+	   -------------------
+           file1_diff.txt
+           file3.txt
+
+	   Common files comparison:
+	   ------------------------
+	   file1.txt : MATCH
+
+
+  Explanation: Script file is executed with dirA and dirB as parameters, resulting in output with  fulfilling following tasks:
+ List files present only in dirA
+ List files present only in dirB
+ For files with the same name in both directories, check whether their contents match	 
+	
+
+

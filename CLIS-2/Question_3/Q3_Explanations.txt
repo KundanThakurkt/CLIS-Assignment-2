@@ -1,0 +1,37 @@
+Question 3
+Please refer screenshots Q3_Output.png, validate_results.sh, and marks.txt files for command execution and output with below explanations:
+
+1. Command: cat << EOF > marks.txt
+	    101,Raj,45,67,89
+	    102,Sunny,30,55,60
+	    103,Vijay,90,92,88
+	    104,Mouni,20,25,40
+	    105,Munni,33,34,35
+            EOF
+
+   Explanation: This command creates a sample marks file with predefined entries in the required format for testing the script
+
+
+2. Command: ./validate_results.sh marks.txt
+   Output:
+	    Students who failed in exactly ONE subject:
+            ------------------------------------------
+	    102, Sunny
+
+	    Students who passed in ALL subjects:
+	    ----------------------------------
+	    101, Raj
+	    103, Vijay
+	    105, Munni
+
+	    Summary:
+	    --------
+	    Students passed all subjects: 3
+	    Students failed exactly one subject: 1
+
+
+   Explanation: The script analyzes the provided marks file, Print students who failed in exactly ONE subject, Print students who passed in ALL subjects, Print the count of students in each category.
+
+
+
+

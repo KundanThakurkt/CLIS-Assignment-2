@@ -1,0 +1,10 @@
+Log Summary Report
+Date: 2026-02-05
+Log file: system.log
+-----------------------
+Total entries: 5
+INFO entries: 2
+WARNING entries: 1
+ERROR entries: 2
+Most recent ERROR:
+2025-01-12 10:17:10 ERROR Network timeout

@@ -1,0 +1,44 @@
+Question 2
+Please refer screenshots Q2_Output.png and log_analyze.sh, logsummary_2026-02-05.txt and system.log files for command execution and output with below explanations:
+
+1. Command: cat << EOF > system.log
+            2025-01-12 10:15:22 INFO System started
+            2025-01-12 10:16:01 ERROR Disk not found
+            2025-01-12 10:16:45 WARNING High memory usage
+            2025-01-12 10:17:10 ERROR Network timeout
+            2025-01-12 10:18:30 INFO User login successful
+	    EOF
+
+   Explanation: This command creates a sample log file with predefined log entries in the required format for testing the script.
+
+
+2. Command: touch log_analyze.sh 
+	    nano log_analyze.sh
+   	    chmod +x log_analyze.sh
+   Explanation: Touch command creates the file and nano opens a nano editor to enter data. The chmod +x command makes the script executable.
+
+
+
+3. Command:  ./log_analyze.sh system.log
+   Output:
+	    Log File Analysis: system.log
+ 	    Total entries: 5
+	    INFO entries: 2 
+            WARNING entries: 1
+            ERROR entries: 2
+            Most recent ERROR:
+            2025-01-12 10:17:10 ERROR Network timeout
+	    Report generated: logsummary_2026-02-05.txt
+
+   Explanation: The script analyzes the provided log file, counts different entries, and displays the most recent ERROR message, and generates the report.
+
+
+
+4. Command: ./log_analyze.sh
+   Output: Error: Please provide exactly one log file as argument.
+   Explanation: When no argument is provided, the script displays an error message indicating invalid argument count.
+
+5. Command: ./log_analyze.sh missing.log
+   Output: Error: Log file does not exist.
+
+   Explanation: When wrong file path is provided as argument, the script displays an error message indicating file does not exist.
