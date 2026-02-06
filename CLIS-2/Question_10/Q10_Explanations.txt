@@ -1,0 +1,31 @@
+Question 10
+Please refer screenshots Q10_Output.png, signal_handling.c & a.out, files for command execution and output with below explanations:
+
+1. Command: touch signal_handling.c
+
+   Explanation: The touch command creates the file with the given name.
+
+
+2. Command: vi signal_handling.c
+    
+   Explanation: The vi command opens Vim Editor, in which the c program can be written. 
+
+3. Command: gcc signal_handling.c
+	    
+   Explanation: The gcc command complies the c program and generates an output file.
+
+4. Command: ls 
+	    
+   Output: a.out signal_handling.c
+
+   Explanation: The ls command is used here to verify the creation of output file generated after compilation of signal_handling.c.
+
+5. Command: ./a.out 
+	    
+   Output: Parent received SIGTERM
+	   Parent received SIGINT. Exiting gracefully
+
+   Explanation: The ./ runs & executes the output file a.out. Parent process runs indefinitely, Child process sends SIGTERM after 5 seconds, Another child sends SIGINT after 10 seconds, Parent handles each signal differently and exits gracefully.
+
+
+
