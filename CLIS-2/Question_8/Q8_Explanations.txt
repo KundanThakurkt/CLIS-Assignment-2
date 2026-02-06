@@ -1,0 +1,35 @@
+Question 8
+Please refer screenshots Q8_Output.png, bg_move.sh, and testdir directory and files for command execution and output with below explanations:
+
+1. Command: mkdir testdir
+	    echo "file one" > testdir/a.txt
+	    echo "file two" > testdir/b.txt
+	    echo "file three" > testdir/c.txt
+
+   Explanation: The mkdir creates a directory, echo > creates files with data using output redirection inside the directory path.
+
+
+2. Command: nano bg_move.sh
+	    chmod +x bg_move.sh
+    
+   Explanation: Nano command opens an editor and chmod +x makes the file executable.
+
+3. Command: ./bg_move.sh testdir
+	    
+   Output:  Moved a.txt with PID 2756
+ 	    Moved b.txt with PID 2758
+   	    Moved c.txt with PID 2760
+	    All background move operations completed.   
+
+   Explanation: The bg_move.sh file takes an argument in directory and in the background does the following tasks: Moves each file in the directory into a subdirectory named backup/ , Performs each move operation in the background, Displays the PID of each background process, And waits for all background processes to finish and then displays the success message.
+
+4. Command: ls 
+	    
+   Output: backup
+
+   Command: cd backup/ 
+	    
+   Output: a.txt b.txt c.txt
+
+
+  Explanation: The ls command used to verify the creation of backup directory and move operations.
