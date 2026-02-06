@@ -1,0 +1,34 @@
+Question 9
+Please refer screenshots Q9_Output.png, zombie.c & a.out, files for command execution and output with below explanations:
+
+1. Command: touch zombie.c
+
+   Explanation: The touch command creates the file with the given name.
+
+
+2. Command: vi zombie.c
+    
+   Explanation: The vi command opens Vim Editor, in which the c program can be written. 
+
+3. Command: gcc zombie.c
+	    
+   Explanation: The gcc command complies the c program and generates an output file.
+
+4. Command: ls 
+	    
+   Output: a.out zombie.c
+
+   Explanation: The ls command is used here to verify the creation of output file generated after compilation of zombie.c.
+
+5. Command: ./a.out 
+	    
+   Output: Child process 2795 exiting
+	   Child process 2797 exiting
+	   Child process 2796 exiting
+	   Parent cleaned child process PID: 2795
+	   Parent cleaned child process PID: 2796
+	   Parent cleaned child process PID: 2797
+
+   Explanation: The ./ runs & executes the output file a.out. Multiple child processes are created. Then terminated. Parent processes cleans the terminated child processes to ensure they do not remain zombies and also prints PID of each child it cleaned.
+
+
