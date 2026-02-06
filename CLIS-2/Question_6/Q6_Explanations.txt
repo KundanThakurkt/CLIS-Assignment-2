@@ -1,0 +1,31 @@
+Question 6
+Please refer screenshots Q6_Output.png, metrics.sh, and input.txt files for command execution and output with below explanations:
+
+1. Command: nano metrics.sh
+            
+   Explanation: This command opens nano editor to edit file.
+
+
+2. Command: chmod +x metrics.sh
+    
+   Explanation: This makes the script file executable.
+
+3. Command: cat << EOF > input.txt
+            Linux scripting is powerful
+            Shell scripts make automation easy
+            Automation improves productivity
+            EOF
+
+   
+   Explanation: The input.txt file is created with cat command and output redirection with sample data.
+
+4. Command: ./metrics.sh input.txt
+   Output: Longest word: productivity
+	   Shortest word: is
+	   Average word length: 7
+           Total unique words: 11
+
+
+
+  Explanation: Script file executes with input.txt as argument and displays Longest word, Shortest word, Average word length and Total number of unique words, using pipes and commands such as tr, sort, uniq, wc in the script file metrics.sh.
+

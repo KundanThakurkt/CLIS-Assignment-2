@@ -1,0 +1,3 @@
+Linux scripting is powerful
+Shell scripts make automation easy
+Automation improves productivity

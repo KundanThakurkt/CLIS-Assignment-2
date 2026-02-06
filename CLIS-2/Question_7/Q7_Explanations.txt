@@ -1,0 +1,30 @@
+Question 7
+Please refer screenshots Q7_Output.png, patterns.sh, and input.txt, consonants.txt, vowels.txt, mixed.txt files for command execution and output with below explanations:
+
+1. Command: nano patterns.sh
+            
+   Explanation: This command opens nano editor to edit file.
+
+
+2. Command: chmod +x patterns.sh
+    
+   Explanation: This makes the script file executable.
+
+3. Command: cat << EOF > input.txt
+	    aeiou
+	    bcdfg
+	    hello
+	    sky
+	    queue
+	    try
+	    EOF
+   
+   Explanation: The input.txt file is created with cat command and output redirection with sample data.
+
+4. Command: ./patterns.sh input.txt
+   Output: Pattern extraction completed.
+
+
+
+  Explanation: Script file executes with input.txt as argument and displays Pattern extraction completed and creates three files (consonants.txt, mixed.txt and vowels.txt) in background.
+

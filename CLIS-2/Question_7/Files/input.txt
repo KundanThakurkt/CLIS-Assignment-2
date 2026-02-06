@@ -1,0 +1,6 @@
+aeiou
+bcdfg
+hello
+sky
+queue
+try
