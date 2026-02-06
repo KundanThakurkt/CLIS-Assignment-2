@@ -9,60 +9,61 @@ easy evaluation.
 ---
 
 ## Repository Structure
-```.
-├── Question_1/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q1_Explanations.txt
-│
-├── Question_2/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q2_Explanations.txt
-│
-├── Question_3/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q3_Explanations.txt
-│
-├── Question_4/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q4_Explanations.txt
-│
-├── Question_5/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q5_Explanations.txt
-│
-├── Question_6/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q6_Explanations.txt
-│
-├── Question_7/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q7_Explanations.txt
-│
-├── Question_8/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q8_Explanations.txt
-│
-├── Question_9/
-│ ├── Files/
-│ ├── Screenshots/
-│ └── Q9_Explanations.txt
-│
-├── Question_10/
+```
+CLIS-Assignment-2/
+├── CLIS-2/
+│ ├── Question_1/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q1_Explanations.txt
+│ │
+│ ├── Question_2/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q2_Explanations.txt
+│ │
+│ ├── Question_3/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q3_Explanations.txt
+│ │
+│ ├── Question_4/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q4_Explanations.txt
+│ │
+│ ├── Question_5/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q5_Explanations.txt
+│ │
+│ ├── Question_6/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q6_Explanations.txt
+│ │
+│ ├── Question_7/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q7_Explanations.txt
+│ │
+│ ├── Question_8/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q8_Explanations.txt
+│ │
+│ ├── Question_9/
+│ │ ├── Files/
+│ │ ├── Screenshots/
+│ │ └── Q9_Explanations.txt
+│ │
+│ └── Question_10/
 │ ├── Files/
 │ ├── Screenshots/
 │ └── Q10_Explanations.txt
 │
 └── README.md
 ```
-
 ---
 
 ## Folder Contents
