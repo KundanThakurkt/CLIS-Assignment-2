@@ -71,7 +71,7 @@ CLIS-Assignment-2/
 Each `Question_*` folder contains:
 - **Files/** – Source code, scripts, input/output files created during execution
 - **Screenshots/** – Screenshots showing command execution and outputs
-- **Q*_Explanations.txt** – Brief (1–2 sentence) explanations after every command
+- **Q\*_Explanations.txt** – Brief (1–2 sentence) explanations after every command
 
 ---
 
